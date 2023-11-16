@@ -1,0 +1,406 @@
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/status
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 16:19:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 15
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"f-v/Y1JusChTxrQUzPtNAKycooOTA"
+
+{
+    "status": "OK"
+}
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/books
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 16:20:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 417
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+
+[
+    {
+        "id": 1,
+        "name": "The Russian",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 2,
+        "name": "Just as I Am",
+        "type": "non-fiction",
+        "available": false
+    },
+    {
+        "id": 3,
+        "name": "The Vanishing Half",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 4,
+        "name": "The Midnight Library",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 5,
+        "name": "Untamed",
+        "type": "non-fiction",
+        "available": true
+    },
+    {
+        "id": 6,
+        "name": "Viscount Who Loved Me",
+        "type": "fiction",
+        "available": true
+    }
+]
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/books?type=fiction
+Proxy:			<none>
+Request params:	<none>
+Query params:	type=fiction
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 16:20:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 283
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"11b-o9uRXcrIVMM6g2P09v+quQbTy2s"
+
+[
+    {
+        "id": 1,
+        "name": "The Russian",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 3,
+        "name": "The Vanishing Half",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 4,
+        "name": "The Midnight Library",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 6,
+        "name": "Viscount Who Loved Me",
+        "type": "fiction",
+        "available": true
+    }
+]
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/books?type=crime
+Proxy:			<none>
+Request params:	<none>
+Query params:	type=crime
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Tue, 14 Nov 2023 16:20:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 91
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"5b-CzvjQGFoAceUOqdIXt2jRXIiDCE"
+
+{
+    "error": "Invalid value for query parameter 'type'. Must be one of: fiction, non-fiction."
+}
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/books?limit=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	limit=2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 16:20:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 135
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"87-GqSuZGLa3vYFRMO5uQLMJPBYFUg"
+
+[
+    {
+        "id": 1,
+        "name": "The Russian",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 2,
+        "name": "Just as I Am",
+        "type": "non-fiction",
+        "available": false
+    }
+]
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/books?limit=25
+Proxy:			<none>
+Request params:	<none>
+Query params:	limit=25
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Tue, 14 Nov 2023 16:20:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 81
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"51-HL9+FZz7MF4wK8alGXbx+mNieY8"
+
+{
+    "error": "Invalid value for query parameter 'limit'. Cannot be greater than 20."
+}
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	bookId=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 16:20:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 161
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"a1-Mcj+H8w3JMJfpTU/R3TvAdr/Z7E"
+
+{
+    "id": 1,
+    "name": "The Russian",
+    "author": "James Patterson and James O. Born",
+    "isbn": "1780899475",
+    "type": "fiction",
+    "price": 12.98,
+    "current-stock": 12,
+    "available": true
+}
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/books/40
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	bookId=40
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 14 Nov 2023 16:20:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 30
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"1e-jFMN24nmRNXZ3KS9KzUo4S4XhTI"
+
+{
+    "error": "No book with id 40"
+}
+Request method:	POST
+Request URI:	https://simple-books-api.glitch.me/api-clients/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "clientName": "Postman",
+    "clientEmail": "asvalentin@example.com",
+    "accessToken": null
+}
+HTTP/1.1 201 Created
+Date: Tue, 14 Nov 2023 16:20:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 82
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"52-C8RuFMiEkyjrgGPSGyIX26ML1Ck"
+
+{
+    "accessToken": "39b33c9a85461d7e825135036c058fe3bda59c6c5029ae3f83b2edc8f776de8c"
+}
+Request method:	POST
+Request URI:	https://simple-books-api.glitch.me/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 39b33c9a85461d7e825135036c058fe3bda59c6c5029ae3f83b2edc8f776de8c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 40,
+    "name": null,
+    "type": null,
+    "available": null,
+    "bookId": 1,
+    "customerName": "John",
+    "orderId": null
+}
+HTTP/1.1 201 Created
+Date: Tue, 14 Nov 2023 16:20:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 50
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"32-mP3JN+k+est+FPfnoTZ2GCSu7CM"
+
+{
+    "created": true,
+    "orderId": "D70BFxyaUBa9zQmeJZTjc"
+}
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/orders/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 39b33c9a85461d7e825135036c058fe3bda59c6c5029ae3f83b2edc8f776de8c
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 16:20:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 183
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"b7-pPR6L0nDcO6i3NygTIap+C4/7YY"
+
+[
+    {
+        "id": "D70BFxyaUBa9zQmeJZTjc",
+        "bookId": 1,
+        "customerName": "John",
+        "createdBy": "de35b1700b6961c4e1c2670fd717b79272f34e9466cec3c7dc951b2c094e4289",
+        "quantity": 1,
+        "timestamp": 1699978808114
+    }
+]
+Request method:	GET
+Request URI:	https://simple-books-api.glitch.me/orders/D70BFxyaUBa9zQmeJZTjc
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=D70BFxyaUBa9zQmeJZTjc
+Headers:		Authorization=Bearer 39b33c9a85461d7e825135036c058fe3bda59c6c5029ae3f83b2edc8f776de8c
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 16:20:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 181
+Connection: keep-alive
+x-powered-by: Express
+etag: W/"b5-pKUJRKzRG9DqiYOkLmT019JRrm0"
+
+{
+    "id": "D70BFxyaUBa9zQmeJZTjc",
+    "bookId": 1,
+    "customerName": "John",
+    "createdBy": "de35b1700b6961c4e1c2670fd717b79272f34e9466cec3c7dc951b2c094e4289",
+    "quantity": 1,
+    "timestamp": 1699978808114
+}
+Request method:	PATCH
+Request URI:	https://simple-books-api.glitch.me/orders/D70BFxyaUBa9zQmeJZTjc
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=D70BFxyaUBa9zQmeJZTjc
+Headers:		Authorization=Bearer 39b33c9a85461d7e825135036c058fe3bda59c6c5029ae3f83b2edc8f776de8c
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+JohnlhIl
+HTTP/1.1 204 No Content
+Date: Tue, 14 Nov 2023 16:20:10 GMT
+Connection: keep-alive
+x-powered-by: Express
+Request method:	DELETE
+Request URI:	https://simple-books-api.glitch.me/orders/D70BFxyaUBa9zQmeJZTjc
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=D70BFxyaUBa9zQmeJZTjc
+Headers:		Authorization=Bearer 39b33c9a85461d7e825135036c058fe3bda59c6c5029ae3f83b2edc8f776de8c
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 No Content
+Date: Tue, 14 Nov 2023 16:20:11 GMT
+Connection: keep-alive
+x-powered-by: Express
